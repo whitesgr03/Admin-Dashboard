@@ -1,0 +1,48 @@
+/* normalize */
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+:root {}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    background-color: red;
+    display: grid; 
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        'sidebar header'
+        'sidebar main';
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: red;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+main {
+    grid-area: main;
+    background-color: blue;
+}
