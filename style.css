@@ -3,17 +3,17 @@
 /* Noto Sans */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-
 :root {
     --sidebar-bgc-color: rgb(25, 146, 211);
     --sidebar-text-color: rgb(255,255,255);
-    --sidebar-text-hover: rgb(0,0,0);
+    --main-text-color: rgb(0,0,0);
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     list-style: none;
+    color: var(--main-text-color);
 }
 
 ul {
