@@ -43,11 +43,11 @@ body {
 
 .container {
     width: 100%;
-    background-color: red;
     display: grid; 
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
         'sidebar header'
+        'sidebar main'
         'sidebar main';
 }
 
