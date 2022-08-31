@@ -71,6 +71,10 @@ body {
     min-width: 40px;
 }
 
+.sidebar a {
+    color: var(--sidebar-text-color);
+}
+
 .sidebar ul {
     margin-top: 50px;
 }
