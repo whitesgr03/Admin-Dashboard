@@ -86,7 +86,7 @@ body {
 }
 
 .sidebar li a:hover {
-    color: var(--sidebar-text-hover);
+    color: var(--main-text-color);
 }
 
 .sidebar li svg {
