@@ -17,7 +17,7 @@
     color: var(--main-text-color);
 }
 
-ul, h1, button {
+ul, h1, h2, h3, h4, button {
     margin: 0;
     padding: 0;
 }
@@ -206,8 +206,7 @@ header .profile .profile-bio{
     justify-content: space-evenly;
 }
 
-header .profile p,
-header .profile h2 {
+header .profile p{
     margin: 0;
 }
 
