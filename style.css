@@ -142,7 +142,6 @@ header .searchBar input {
     padding: 0 10px;
     outline: none;
     background-color: rgb(226, 232, 240);
-
 }
 
 
@@ -171,7 +170,7 @@ header .topBar li::after {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #000;
+    border-top: 5px solid var(--main-text-color);
 }
 
 header .topBar li button {
@@ -182,7 +181,7 @@ header .topBar li button {
 header .topBar li:last-child button {
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid black;
+    border: 2px solid var(--main-text-color);
     width: 40px;
     height: 40px;
 }
@@ -228,7 +227,6 @@ header .action-buttons li button {
 }
 
 main {
-
     grid-area: main;
     background-color: blue;
 }
