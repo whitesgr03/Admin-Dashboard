@@ -7,7 +7,9 @@
     --sidebar-bgc-color: rgb(25, 146, 211);
     --sidebar-text-color: rgb(255,255,255);
     --main-text-color: rgb(0,0,0);
+    --main-opacity-color: rgba(128 ,128, 128, .2);
     --main-bgc-color: rgb(226, 232, 240);
+    --main-paragraph-color:rgb(128, 128, 128);
 }
 
 * {
@@ -17,10 +19,11 @@
     color: var(--main-text-color);
 }
 
-ul, h1, h2, h3, h4, button {
+ul, h1, h2, h3, h4, button, p {
     margin: 0;
     padding: 0;
 }
+
 
 a {
     text-decoration: none;
@@ -72,8 +75,6 @@ body {
     min-width: 40px;
 }
 
-
-
 .sidebar ul {
     margin-top: 50px;
 }
@@ -102,6 +103,7 @@ body {
     vertical-align: bottom;
 }
 
+
 header {
     grid-area: header;
     display: grid;
@@ -113,8 +115,9 @@ header {
     gap: 30px;
     padding: 20px 50px;
     z-index: 0;
-    box-shadow: 0 2px 5px 3px rgb(0, 0, 0, .1);
+    box-shadow: 0 2px 5px 3px var(--main-opacity-color);
 }
+
 
 header .searchBar {
     grid-area: searchBar;
@@ -146,6 +149,7 @@ header .searchBar input {
     outline: none;
     background-color: var(--main-bgc-color);
 }
+
 
 header .topBar{
     grid-area: topBar;
@@ -189,6 +193,7 @@ header .topBar li:last-child button {
     height: 40px;
 }
 
+
 header .profile{
     grid-area: profile;
     display: flex;
@@ -225,6 +230,8 @@ header .action-buttons li button {
     border-radius: 20px;
     padding: 10px 30px;
 }
+
+
 
 main {
     grid-area: main;
