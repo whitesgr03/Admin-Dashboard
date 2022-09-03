@@ -24,7 +24,6 @@ ul, h1, h2, h3, h4, button, p {
     padding: 0;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -53,6 +52,7 @@ body {
         'sidebar header'
         'sidebar main';
 }
+
 
 .sidebar {
     grid-area: sidebar;
@@ -117,7 +117,6 @@ header {
     z-index: 0;
     box-shadow: 0 2px 5px 3px var(--main-opacity-color);
 }
-
 
 header .searchBar {
     grid-area: searchBar;
