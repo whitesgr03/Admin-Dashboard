@@ -233,5 +233,126 @@ header .action-buttons li button {
 
 main {
     grid-area: main;
-    background-color: blue;
+    background-color: var(--main-bgc-color);
+    display: grid;
+    grid-template: repeat(2, 1fr) / 3fr 1fr;
+    grid-template-areas: 
+    'repositories announcements'
+    'repositories trending';
+    gap: 25px;
+    padding: 40px 30px;
+}
+
+main h2 {
+    margin-bottom: 15px;
+}
+
+main .wrap {
+    background-color: var(--sidebar-text-color);
+    box-shadow: 1px 3px 3px 1px var(--main-opacity-color);
+    border-radius: 8px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+main .repositories .project .description,
+main .announcements .content {
+    color: var(--main-paragraph-color);
+}
+
+
+main .repositories {
+    grid-area: repositories;
+    display: flex;
+    flex-direction: column;
+} 
+
+main .repositories .projects {
+    flex: 1;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 30px;
+}
+
+main .repositories .project {
+    border-left: 8px solid rgb(255, 165, 0);
+}
+
+main .repositories .project .description{
+    margin: 20px 0;
+}
+
+main .repositories .project div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+main .repositories .project button {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+
+main .announcements {
+    grid-area: announcements;
+    display: flex;
+    flex-direction: column;
+} 
+
+main .announcements .activity:not(:last-child) {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--main-opacity-color);
+}
+
+main .announcements .activity .content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin: 10px 0 20px;
+    font-size: .8rem;
+}
+
+main .announcements .activity:last-child .content{
+    margin-bottom: 0;
+}
+
+
+
+main .trending { 
+    grid-area: trending;
+    display: flex;
+    flex-direction: column;
+}
+
+main .trending .profile {
+    display: flex;
+    gap: 20px;
+}
+
+main .trending .profile .image {
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main .trending .profile .profile-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .trending .profile .profile-bio p:last-child {
+    margin-top: 5px;
+    color: var(--main-paragraph-color);
+    font-size: .8rem;
 }
