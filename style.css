@@ -72,31 +72,33 @@ body {
     min-width: 40px;
 }
 
-.sidebar a {
-    color: var(--sidebar-text-color);
-}
+
 
 .sidebar ul {
     margin-top: 50px;
 }
 
-.sidebar li {
+.sidebar ul li {
+    padding: 15px 30px;
+}
+
+.sidebar ul li h3 {
     font-weight: bolder;
     font-size: 1.2rem;
 }
 
-.sidebar li a {
-    padding: 10px 30px;
-    display: block;
+.sidebar ul li h3 a {
+    color: var(--sidebar-text-color);
 }
 
-.sidebar li a:hover {
+.sidebar ul li h3 a:hover {
     color: var(--main-text-color);
 }
 
-.sidebar li svg {
-    width: 20px;
-    margin-right: 10px;
+.sidebar ul li h3 svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
     vertical-align: bottom;
 }
 
