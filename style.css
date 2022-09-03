@@ -63,15 +63,14 @@ body {
 }
 
 .sidebar .logo a{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    align-items: center;
     gap: 20px;
     padding: 0 30px;
-    align-items: baseline;
 }
 
 .sidebar .logo img {
-    width: 100%;
+    max-width: 80px;
     min-width: 40px;
 }
 
